@@ -1,0 +1,108 @@
+/*
+The @media rule is used in media queries to apply different styles for different media types/devices.
+
+Media queries can be used to check many things, such as: width and height of the device OR orientation (is the tablet/phone in landscape or portrait mode?)
+resolution Using media queries are a popular technique for delivering a tailored style sheet (responsive web design) to desktops, laptops, tablets, and mobile phones.
+
+In addition to media types, there are also media features. Media features provide more specific details to media queries, by allowing to test for a specific feature of the user agent or display device.
+*/
+
+/*Extra Large Screen*/
+@media (min-width: 1200px) {    
+    body #nav {
+        width: calc(100% - 96px);
+       }
+
+       body .contact-form {
+        width: 600px;
+    }
+}
+
+/*Midium  Screen*/
+@media (min-width: 992px) {    
+    body #nav {
+        width: calc(100% - 86px);
+       }
+
+       body .contact-form {
+        width: 450px;
+    }
+}
+
+/*Small  Screen*/
+@media (min-width: 768px) {    
+    body #nav {
+        width: calc(100% - 66px);
+       }
+       
+       body .contact-form {
+        width: 400px;
+    }
+}
+
+/*Table  Screen*/
+@media all and (max-width: 699px) and (min-width: 520px) {
+    body #nav {
+        width: calc(100% - 66px);
+    }
+
+    body .contact-form {
+        width: 400px;
+    }
+}
+
+/*Mobile  Screen*/
+@media all and (max-width: 699px) and (min-width: 520px) {
+    body #nav {
+        width: calc(100% - 56px);
+    }
+
+    body .contact-form {
+        width: 400px;
+    }
+}
+
+#nav {
+    background-color: yellow;
+    font-family: Arial;
+    font-size: 2rem;
+    color: red
+  }
+  
+  #main {
+    background-color: yellow;
+    font-family: Arial;
+    font-size: 2rem;
+    color: yellow
+  }
+ 
+  section#home{
+      background-color: grey;
+  }
+
+  #about {    
+    font-family: Arial;
+    font-size: 2rem;
+    color: red
+  }
+section#about{
+    color:whitesmoke;
+    background-color: rgb(93, 238, 243)
+}
+
+  #contact {
+    background-color: gray;
+    font-family: Arial;
+    font-size: 2rem;
+    color: white
+  }
+nav#nav{
+    border: none;
+    border-radius: 30px;
+    text-align: left;
+    color:whitesmoke;
+    background-color: rgb(93, 238, 243);
+}
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+}

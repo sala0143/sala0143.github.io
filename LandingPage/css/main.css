@@ -1,0 +1,111 @@
+.body{
+  align-content: center;
+  max-width: 100%;
+  height: auto; 
+  background-color: #f7f7ff  /* white  */
+  }
+ 
+ html{
+     background-color: #f7f7ff;
+     font-family: Montserrat;
+ }
+ .container{
+   margin: 0 auto;
+   max-width: 90%;
+ }
+ /* This style is applied to green button "Drive with us " giving button green color and desired font size */
+  .button {
+    background-color: #57eeab; /* green  */
+    border: none;
+    text-align: center;
+    width:100%;
+   font-size: 16px;
+    padding: 15px 32px;
+   }
+  
+   /* This style is applied to all the textbox with properties such as font size, border, backgroud shawdow and width with respect to section*/
+  input[type=text] {
+ width: 93%;
+ padding: 16px 10px;
+ border: none;
+ font-size: 14px;
+ border-radius: 4px;
+ background-color: #f1f1f1;
+ }
+  /* This  attribute is for the button in footer section with red "calculate"*/
+  input[type=button] {
+  background-color: #ff8480;   /* red  */
+  text-align: center;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  padding: 10px 29px;
+  width: 100%;
+  } 
+  
+  /* This style is applied for image in grids which give image a responsive behaviour 
+  according to window resolution due to height and width properties*/
+  img{
+  background-repeat: no-repeat;
+ max-width: 100%;
+  height: auto;          
+  }  
+  
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ 
+ 
+ 
+ .header {
+   padding: 9px;
+ }
+ 
+ /* This style is applied for the "apply now form " in one of grid section, it gives color, shadow to box and backgroud color*/
+ .aside {
+   background-color: #ffffff;
+   padding: 15px;
+   color: #000000;
+   font-size: 14px;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ }
+ 
+ /* This style is applied to footer for giving backgroud color yellow and making it left and bottom 0 and width 100*/
+ .footer {
+   background-color: #fffd8c;
+   font-size: 12px;
+   padding: 25px;
+    bottom: 0px;
+    left:0;
+   width: 100%;
+ }
+ input[type=search] {
+ border: none;
+ font-size: 14px;
+ padding: 10px;
+ border-radius: 4px;
+ background-color: #f1f1f1;}
+@media screen and (min-width:765px)
+{.row{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: none;
+} 
+.hours
+{
+  width:15%;
+}
+.ftr{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: none;
+}
+.col-2{
+  margin-left:auto;
+  
+}input[type=button]{
+  width:fit-content;
+}}
