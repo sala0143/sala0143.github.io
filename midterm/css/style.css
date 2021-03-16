@@ -1,0 +1,166 @@
+/* This style.css applies to all 3 web pages - index, about and contact making them look simlar 
+as present in the mock-up website. */
+body {
+    height: auto;
+    max-width: 100%;
+    font-family: 'Raleway', sans-serif;
+    }
+    
+    /* This applies font to every section */
+    *{
+      font-family: 'Raleway', sans-serif;
+    }
+    
+    
+    /* Style the header */
+    .header {
+      position: relative;
+      background-color: #3c3b3a;
+      top:0;
+      width: 100%;
+      padding: auto;
+      color: white;
+     }
+    
+     /* Style the Footer Section */
+     .footer {
+       position: relative;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       padding: 15px;
+       background-color: #3c3b3a ;
+       color: white;
+       text-align: center;
+    }
+    
+    /* Style for images to be responsive while screen fit */
+    .responsive {
+      width: 80%;
+      height: auto;
+    }
+    
+    /*  This section makes image in circle using radius property for that div section.*/
+    div.circle{
+       display: inline-block;
+      
+        border-radius: 100%;
+        border: 2px solid white;
+    }
+    
+    /*  This section makes image in circle using radius property.*/
+    .responsive1{
+        width: 130px;
+        height: 120px;
+        border-radius: 100%;
+        border: 5px solid white;
+    }
+    
+    /* making the inner sections responsive giving them the flex attribute.  */
+    .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: auto; 
+    text-align: left;
+    margin-left:3%;
+    }
+    
+    .row,.header {
+      display: -webkit-flex;
+      display: flex;
+    
+    }
+    
+    /* This style applies to all the sub heading present in websites  */
+    .sub-heading {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    height: auto;
+    }
+    
+    /* This style applies to all sections present in websites for having different background color:
+    such as green, white and black ;  */
+    
+    .secondbox{
+    display: -webkit-flex;
+    display: flex;
+    height:auto;   
+    width:100%;  
+    background-color:#E0E0E0;       
+    } 
+    
+    .thirdbox{
+    display: -webkit-flex;
+    display: flex;
+    background-color: #3c3b3a;  /* Makes background - Black */
+    }
+    
+    .fourthbox{
+    display: -webkit-flex;
+    display: flex;
+     background-color: #f2f2f2; /* Makes background - White  */
+    }
+    
+    /* This style applies to the black bar for the Subscribe section */
+    .bar-box{
+    display: -webkit-flex;
+    display: flex;
+    background-color: #3c3b3a ;
+    width: 100%;
+    padding: 7px;
+    color: white;
+    font-size: 29px;
+    text-align: center;
+    
+    }
+    
+    /* If screen resolution is less  */
+    @media (max-width: 600px) {
+      .row,.secondbox, .thirdbox, .fourthbox{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+      }
+    
+    /* Style applies to all the buttons with color and some shadow properties  */
+    .button{
+    background-color: #26a682;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 4px 2px;
+    width: 206px;
+    box-shadow: 10px 5px 5px gray;
+    }
+    
+    /* This style applies to the anchor  section making it white color.  */
+    a:active, a:visited, a:link, a:hover,a:focus{
+      color: white;
+    }
+    
+    /* The table attribute is for the contact us form section mainly for making the curve edges.  */
+    div.table
+    {
+      border-radius: 22px;
+      background-color: #26a682;
+      padding: 20px;
+      color: white;
+    }
+    
+    /* This section is for all the input tags in the contact form section */ 
+    input{
+      width: 100%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 19px;
+      resize: vertical;
+      color: white;
+    }
+    
